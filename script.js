@@ -364,8 +364,6 @@ var Stats = function () {
     ctx.running = true;
     ctx.frame = 1;
     logo = new Image();
-    logo.src =
-      "https://nathanprinsley-files.prinsh.com/data-1/images/NathanPrinsley-lightmotion-saveyourheart.png";
     hue = new Oscillator({
       phase: Math.random() * Math.TWO_PI,
       amplitude: 85,
