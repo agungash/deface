@@ -1,327 +1,223 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hacked By Agung</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Hacked By Agung " name="description" />
-    <meta content="Hacked By Agung" name="keywords" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body onkeydown="return false" oncontextmenu="return false">
-    <div id="container">
-      <div>
-        <br /><br /><br /><br />
-        <script>
-          /*function check(e) { alert(e.keyCode); }*/ document.onkeydown = function(e) { if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. alert('NGAPAIN!'); } return false; };
-        </script>
-        <script>
-          var isCtrl = false; document.onkeyup=function(e) { if(e.which == 17) isCtrl=false; } document.onkeydown=function(e) { if(e.which == 17) isCtrl=true; if((e.which == 85) || (e.which == 67) &amp;&amp; isCtrl == true) { // alert(&#8216;Keyboard shortcuts are cool!&#8217;); return false; } } var isNS = (navigator.appName == "Netscape") ? 1 : 0; if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP); function mischandler(){ return false; } function mousehandler(e){ var myevent = (isNS) ? e : event; var eventbutton = (isNS) ? myevent.which : myevent.button; if((eventbutton==2)||(eventbutton==3)) return false; } document.oncontextmenu = mischandler; document.onmousedown = mousehandler; document.onmouseup = mousehandler;
-        </script>
-        <script>
-          farbbibliothek = new Array();
-          farbbibliothek[0] = new Array(
-            "#FF0000",
-            "#FF1100",
-            "#FF2200",
-            "#FF3300",
-            "#FF4400",
-            "#FF5500",
-            "#FF6600",
-            "#FF7700",
-            "#FF8800",
-            "#FF9900",
-            "#FFaa00",
-            "#FFbb00",
-            "#FFcc00",
-            "#FFdd00",
-            "#FFee00",
-            "#FFff00",
-            "#FFee00",
-            "#FFdd00",
-            "#FFcc00",
-            "#FFbb00",
-            "#FFaa00",
-            "#FF9900",
-            "#FF8800",
-            "#FF7700",
-            "#FF6600",
-            "#FF5500",
-            "#FF4400",
-            "#FF3300",
-            "#FF2200",
-            "#FF1100"
-          );
-          farbbibliothek[1] = new Array(
-            "#00FF00",
-            "#000000",
-            "#00FF00",
-            "#00FF00"
-          );
-          farbbibliothek[2] = new Array(
-            "#00FF00",
-            "#FF0000",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00",
-            "#00FF00"
-          );
-          farbbibliothek[3] = new Array(
-            "#FF0000",
-            "#FF4000",
-            "#FF8000",
-            "#FFC000",
-            "#FFFF00",
-            "#C0FF00",
-            "#80FF00",
-            "#40FF00",
-            "#00FF00",
-            "#00FF40",
-            "#00FF80",
-            "#00FFC0",
-            "#00FFFF",
-            "#00C0FF",
-            "#0080FF",
-            "#0040FF",
-            "#0000FF",
-            "#4000FF",
-            "#8000FF",
-            "#C000FF",
-            "#FF00FF",
-            "#FF00C0",
-            "#FF0080",
-            "#FF0040"
-          );
-          farbbibliothek[4] = new Array(
-            "#FF0000",
-            "#EE0000",
-            "#DD0000",
-            "#CC0000",
-            "#BB0000",
-            "#AA0000",
-            "#990000",
-            "#880000",
-            "#770000",
-            "#660000",
-            "#550000",
-            "#440000",
-            "#330000",
-            "#220000",
-            "#110000",
-            "#000000",
-            "#110000",
-            "#220000",
-            "#330000",
-            "#440000",
-            "#550000",
-            "#660000",
-            "#770000",
-            "#880000",
-            "#990000",
-            "#AA0000",
-            "#BB0000",
-            "#CC0000",
-            "#DD0000",
-            "#EE0000"
-          );
-          farbbibliothek[5] = new Array(
-            "#000000",
-            "#000000",
-            "#000000",
-            "#FFFFFF",
-            "#FFFFFF",
-            "#FFFFFF"
-          );
-          farbbibliothek[6] = new Array(
-            "#33CCFF",
-            "#33CCCC",
-            "#33CC99",
-            "#33CC66",
-            "#33CC33",
-            "#33CC00"
-          );
-          farbbibliothek[7] = new Array(
-            "#00dbdb",
-            "#00afdb",
-            "#0083db",
-            "#0058db",
-            "#002cdb",
-            "#2c00db",
-            "#5800db",
-            "#8300db",
-            "#af00db",
-            "#db00db"
-          );
-          farbbibliothek[8] = new Array(
-            "#ffd8f4",
-            "#ffcff2",
-            "#ffc6f0",
-            "#ffbded",
-            "#ffb4eb",
-            "#ffabe8",
-            "#ffa2e6",
-            "#ff99e3",
-            "#ff90e1",
-            "#ff87de",
-            "#ff7edc",
-            "#ff75d9",
-            "#ff6cd7",
-            "#ff63d5",
-            "#ff5ad3",
-            "#ff51d1",
-            "#ff48cf",
-            "#ff3fcd",
-            "#ff36cb",
-            "#ff2dc9",
-            "#ff24c7",
-            "#ff1bc5",
-            "#ff12c3",
-            "#ff09c1",
-            "#f600b8",
-            "#ed00b1",
-            "#e400aa",
-            "#db00a3",
-            "#d2009c",
-            "#c90095",
-            "#c0008e",
-            "#b70087",
-            "#ae0080",
-            "#a50079",
-            "#9c0072",
-            "#93006b",
-            "#8a0064",
-            "#81005d",
-            "#780056",
-            "#6f004f",
-            "#660048",
-            "#5d0042",
-            "#54003b",
-            "#4b0035",
-            "#42002f",
-            "#390028",
-            "#300022",
-            "#27001b"
-          );
-          farben = farbbibliothek[4];
-          function farbschrift() {
-            for (var i = 0; i < Buchstabe.length; i++) {
-              document.all["a" + i].style.color = farben[i];
-            }
-            farbverlauf();
-          }
-          function string2array(text) {
-            Buchstabe = new Array();
-            while (farben.length < text.length) {
-              farben = farben.concat(farben);
-            }
-            k = 0;
-            while (k <= text.length) {
-              Buchstabe[k] = text.charAt(k);
-              k++;
-            }
-          }
-          function divserzeugen() {
-            for (var i = 0; i < Buchstabe.length; i++) {
-              document.write(
-                "<font face='monotype corsiva' size=30><span id='a" +
-                  i +
-                  "' class='a" +
-                  i +
-                  "'>" +
-                  Buchstabe[i] +
-                  "</span></font>"
-              );
-            }
-            farbschrift();
-          }
-          var a = 1;
-          function farbverlauf() {
-            for (var i = 0; i < farben.length; i++) {
-              farben[i - 1] = farben[i];
-            }
-            farben[farben.length - 1] = farben[-1];
-            setTimeout("farbschrift()", 30);
-          }
-          var farbsatz = 1;
-          function farbtauscher() {
-            farben = farbbibliothek[farbsatz];
-            while (farben.length < text.length) {
-              farben = farben.concat(farben);
-            }
-            farbsatz = Math.floor(
-              Math.random() * (farbbibliothek.length - 0.0001)
-            );
-          }
-          setInterval("farbtauscher()", 5000);
-          text = "-=[+]. /No System is Safe/ .[+]=-";
-        </script>
-        <center>
-          <span class="newclass">
-            <script>
-              string2array(text);
-              divserzeugen();
-            </script>
-          </span>
-        </center>
-        <h1 id="h1">Hacked By Agung</h1>
-        <br />
-        <br />
-        <h2 id="h2">I Love You</h2>
-        <h3 id="h3">Admin</h3>
-        <br>
-        <audio src="Yoru-ni-kakeru-(osanime.com).mp3" loop autoplay controls></audio>
-        <h4 id="h4"><br /></h4>
-        <br /><br /><br /><br /><br /><br /><br /><br />
-        <p class="style14" align="center">
-          <font color="#ffffff" face="courier new" size="3">Greetz :</font>
-          <marquee
-            scrolldelay="20"
-            scrollamount="2"
-            direction="left"
-            behavior="scroll"
-            width="50%"
-          >
-            <font color="#ff0000" face="Tahoma" size="3">
-              Agung - No System is Safe
-            </font></marquee
-          ><br />
-        </p>
-        <p align="center"></p>
-      </div>
-    </div>
-    <canvas id="canvas"></canvas>
-    <script src="script.js"></script>
-  </body>
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<style type="text/css">
+
+   #outerCircleText {
+   
+   font-style: courier new;
+   font-weight: bold;
+   font-family: 'comic sans ms', verdana, arial;
+   color: white;
+   
+   position: absolute;top: 0;left: 0;z-index: 3000;cursor: default;}
+   #outerCircleText div {position: relative;}
+   #outerCircleText div div {position: absolute;top: 0;left: 0;text-align: center;}
+   
+</style>
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js"></script>
+<script> 
+ 
+function tb5_makeArray(n){
+ this.length = n;
+ return this.length;
+}
+ 
+tb5_messages = new tb5_makeArray(7);
+tb5_messages[0] = "Hai Kamu";
+tb5_messages[1] = "Aku Mau Kamu Tau";
+tb5_messages[2] = "Aku Sayang Sama Kamu";
+tb5_messages[3] = "Aku Serius";
+tb5_messages[4] = "Kamu Mau Ngga Jadi Pacarku";
+tb5_messages[5] = "Aku Berharap Kamu Menerimanya";
+tb5_messages[6] = "I Love You";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 20;
+tb5_speed = 30;
+tb5_delay = 2000;
+var tb5_counter=2;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){
+ k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+ temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){
+ if (tb5_currMsg == tb5_messages.length-1){
+ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+ clearTimeout(tb5_timerID);
+ return;
+ }
+ tb5_counter++;
+ tb5_currMsg=0;
+ }
+ else{
+ tb5_currMsg++;
+ }
+ n=0;
+ tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+ for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+ tb5_arr[i] = i;
+ tb5_sts[i] = "_";
+ }
+ tb5_arr = tb5_shuffle(tb5_arr);
+ tb5_sp=tb5_delay;
+}
+else{
+ tb5_sp=tb5_speed;
+ k = tb5_arr[n];
+ tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+ tb5_stsmsg = "";
+ for (var i=0; i<tb5_sts.length; i++)
+ tb5_stsmsg += tb5_sts[i];
+ document.title = tb5_stsmsg;
+ n++;
+ }
+ tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){
+ tb5_init(0);
+}
+tb5_randomizetitle();
+ 
+</script>
+</head>
+<body bgcolor="black">
+</br><center><img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2018/01/11/4285036452.jpg" alt="Love" width="30%" height="40%" /></a>
+<center><center>
+<br><font size="6"><font color="red" face="courier new">Hacked by Chmod</font>
+<br><br>
+<font size="3"><font color="white" face="courier new">Hai ini dia isi hatiku yang sesungguhnya</font>
+<br><font size="3"><font color="white" face="courier new">Selama ini ku hanya dapat diam dan berdoa kepada Yang Maha Kuasa agar dirimu bisa bersamaku</font>
+<br><font size="3"><font color="white" face="courier new">Namun kali ini aku ingin mengutarakannya</font>
+<br><font size="4"><font color="white" face="courier new">Mau ga jadi pacarku?</font>
+<br><input type="button" value="Ya aku mau" onclick="myalert();"><><><input type="button" value=" Maaf" onclick="myalert2();">
+<br><br><br><hr color="red">
+<font size="4"><font color="white" face="courier new">Pesan:</font>
+<marquee><font size="3"><font color="cyan" face="courier new">Berharap setelah aku berhasil login di hati kamu ga akan ada tombol logout dan sessionku ga bakal pernah expired.</marquee>
+<br>
+<p><font color="white" size="3">Copyright © 2022 Chmod</font></a></p>
+<center><audio autoplay controls loop src="price-tag_putih-abu-abu.mp3"></audio></a></center>
+<script>
+
+function myalert() { 
+            alert("Thanks ya udah mau terima aku apa adanya"); 
+        } 
+
+function myalert2() { 
+            alert("Baiklah kalau itu mau mu"); 
+        } 
+
+;(function(){
+
+
+var msg = "  I Love You ";
+
+var size = 15;
+
+
+var circleY = 0.75; var circleX = 2;
+
+var letter_spacing = 4;
+
+var diameter = 10;
+
+
+var rotation = 0.2;
+
+var speed = 0.3;
+
+
+
+if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+
+msg = msg.split('');
+var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+o = document.createElement('div'), oi = document.createElement('div'),
+b = document.compatMode && document.compatMode != "BackCompat"? document.documentElement : document.body,
+
+mouse = function(e){
+ e = e || window.event;
+ ymouse = !isNaN(e.pageY)? e.pageY : e.clientY; // y-position
+ xmouse = !isNaN(e.pageX)? e.pageX : e.clientX; // x-position
+},
+
+makecircle = function(){ // rotation/positioning
+ if(init.nopy){
+  o.style.top = (b || document.body).scrollTop + 'px';
+  o.style.left = (b || document.body).scrollLeft + 'px';
+ };
+ currStep -= rotation;
+ for (var d, i = n; i > -1; --i){ // makes the circle
+  d = document.getElementById('iemsg' + i).style;
+  d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+  d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+ };
+},
+
+drag = function(){ // makes the resistance
+ y[0] = Y[0] += (ymouse - Y[0]) * speed;
+ x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+ for (var i = n; i > 0; --i){
+  y[i] = Y[i] += (y[i-1] - Y[i]) * speed;
+  x[i] = X[i] += (x[i-1] - X[i]) * speed;
+ };
+ makecircle();
+},
+
+init = function(){ 
+ if(!isNaN(window.pageYOffset)){
+  ymouse += window.pageYOffset;
+  xmouse += window.pageXOffset;
+ } else init.nopy = true;
+ for (var d, i = n; i > -1; --i){
+  d = document.createElement('div'); d.id = 'iemsg' + i;
+  d.style.height = d.style.width = a + 'px';
+  d.appendChild(document.createTextNode(msg[i]));
+  oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+ };
+ o.appendChild(oi); document.body.appendChild(o);
+ setInterval(drag, 25);
+},
+
+ascroll = function(){
+ ymouse += window.pageYOffset;
+ xmouse += window.pageXOffset;
+ window.removeEventListener('scroll', ascroll, false);
+};
+
+o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+
+if (window.addEventListener){
+ window.addEventListener('load', init, false);
+
+ document.addEventListener('mouseover', mouse, false);
+ document.addEventListener('mousemove', mouse, false);
+  if (/Apple/.test(navigator.vendor))
+   window.addEventListener('scroll', ascroll, false);
+}
+else if (window.attachEvent){
+ window.attachEvent('onload', init);
+ document.attachEvent('onmousemove', mouse);
+};
+
+})();
+</script>
+</body>
 </html>
